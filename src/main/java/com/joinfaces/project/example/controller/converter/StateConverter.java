@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
+import java.util.Optional;
 
 @Component
 public class StateConverter implements Converter {
@@ -22,7 +23,7 @@ public class StateConverter implements Converter {
 
     @Override
     public String getAsString(FacesContext facesContext, UIComponent uiComponent, Object o) {
-        if(o != null){
+        if (o != null) {
             Long codigo = ((State) o).getIdState();
             String IdState = (codigo == null ? null : codigo.toString());
 

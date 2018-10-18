@@ -34,6 +34,8 @@ public class PersonBean implements Serializable {
 
     public void savePerson() {
         personService.savePerson(person);
+
+        people = personService.list();
     }
 
     public Person getPerson() {

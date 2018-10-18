@@ -5,10 +5,6 @@
          id="WebApp_ID" version="3.0">
     <display-name>modulo4</display-name>
 
-    <welcome-file-list>
-        <welcome-file>person.xhtml</welcome-file>
-    </welcome-file-list>
-
     <context-param>
         <param-name>com.sun.faces.writeStateAtFormEnd</param-name>
         <param-value>false</param-value>

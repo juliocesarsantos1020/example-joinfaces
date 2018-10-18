@@ -22,7 +22,13 @@ public class StateService {
         return stateRepository.findAll();
     }
 
-    public Optional<State> findByIdState(Long idState){
-        return stateRepository.findById(idState);
+    public State findByIdState(Long idState) {
+        Optional<State> state = stateRepository.findById(idState);
+        State stateSelecionado = new State();
+
+        if (state.isPresent()) {
+            stateSelecionado = state.get();
+        }
+        return stateSelecionado;
     }
 }

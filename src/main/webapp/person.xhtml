@@ -12,6 +12,16 @@
 <body>
 <h1>Registration of People</h1>
 
+<h:form onsubmit="this.action='#{request.contextPath}/logout';">
+    <p:toolbar>
+        <f:facet name="left">
+            <p:commandButton value="Logout" ajax="false"/>
+        </f:facet>
+    </p:toolbar>
+</h:form>
+
+<br/>
+
 <h:form id="frmPerson">
     <p:panelGrid columns="2">
         <p:outputLabel value="Name"/>
